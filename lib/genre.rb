@@ -21,7 +21,7 @@ class Genre
     @@all = []
   end
 
-  def artists 
+  def artists
     @artists
   end
   def self.create(name)
