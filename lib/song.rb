@@ -51,7 +51,7 @@ class Song
     if !self.find_by_name(name)
        Song.new(name)
     end
-    @@all.uniq
+    @@all =@@all.uniq
   end
 
 end
