@@ -1,7 +1,5 @@
 module Concerns::Findable
-  def find_by_name(name)
-    self.all.detect {|e| e.name == name}
-  end
+
 
   def self.find_by_name(name)
     instance = nil
