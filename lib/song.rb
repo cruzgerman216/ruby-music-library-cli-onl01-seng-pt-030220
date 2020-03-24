@@ -27,7 +27,8 @@ class Song
 
   def genre=(genre)
     @genre = genre
-    @genre.songs << self
+    if !@genre.songs.include?(self)
+      @genre.songs << self
   end
   def self.create(name)
     song = Song.new(name)
