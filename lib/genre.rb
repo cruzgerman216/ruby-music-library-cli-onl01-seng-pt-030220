@@ -22,7 +22,11 @@ class Genre
   end
 
   def artists
-    @artists
+    arr = []
+    songs.each do |song| 
+      arr << song.artist
+    end
+    arr
   end
   def self.create(name)
     genre = Genre.new(name)
