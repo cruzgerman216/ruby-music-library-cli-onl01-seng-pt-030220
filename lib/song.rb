@@ -51,7 +51,7 @@ class Song
     if !self.find_by_name(name)
        Song.new(name)
      else
-       self.find_by_name(name)
+       self.create(name)
     end
   end
 
