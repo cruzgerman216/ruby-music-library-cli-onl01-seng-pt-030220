@@ -24,7 +24,7 @@ class MusicLibraryController
 
   def list_songs
     Song.all.each do |song|
-      puts son
+      puts song
     end
   end
 
