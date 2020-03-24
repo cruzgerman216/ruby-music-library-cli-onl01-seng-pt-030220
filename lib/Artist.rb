@@ -4,7 +4,6 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    @genres = []
     save
   end
 
@@ -27,6 +26,7 @@ class Artist
   end
 
   def genres
+    arr = []
     Songs.all.collect {|song| song.artist == self return song.genre}
   end
   def add_song(song)
