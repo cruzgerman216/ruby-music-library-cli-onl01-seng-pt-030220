@@ -47,4 +47,10 @@ class Song
     song_instance
   end
 
+  def self.find_or_create_by_name(name)
+    if Song.find_by_name(name) == nil
+      song = Song.new(name)  
+    end
+  end
+
 end
