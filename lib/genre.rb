@@ -25,5 +25,5 @@ class Genre
     @@all << genre
     genre
   end
-  
+
 end
