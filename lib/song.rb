@@ -61,4 +61,8 @@ class Song
     song.genre = Genre.find_or_create_by_name(arr[2].delete_suffix('.mp3'))
     song
   end
+
+  def self.create_from_filename(file) 
+       
+  end
 end
