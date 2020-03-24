@@ -27,14 +27,14 @@ class Artist
 
   def genres
     arr = []
-    songs.each do |song| 
+    songs.each do |song|
       if !arr.include?(song.genre)
         arr << song
       end
     end
     arr
   end
-  
+
   def add_song(song)
     if song.artist == nil
       song.artist = self
