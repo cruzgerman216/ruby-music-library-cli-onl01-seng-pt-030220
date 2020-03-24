@@ -23,7 +23,7 @@ class Genre
 
   def artists
     arr = []
-    songs.each do |song| 
+    songs.each do |song|
       arr << song.artist
     end
     arr
