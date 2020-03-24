@@ -21,6 +21,9 @@ class Genre
     @@all = []
   end
 
+  def artists 
+    @artists
+  end
   def self.create(name)
     genre = Genre.new(name)
     @@all << genre
