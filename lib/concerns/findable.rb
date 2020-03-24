@@ -6,7 +6,7 @@ module Concerns::Findable
   def self.find_by_name(name)
     instance = nil
     self.all.each do |element|
-      instance = song if name.name == name
+      instance = element if name.name == name
     end
     instance
   end
