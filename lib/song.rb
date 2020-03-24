@@ -42,7 +42,6 @@ class Song
     @@all.each do |song|
       song_instance = song if song.name == name
     end
-    @@all.length
   end
 
   def self.find_or_create_by_name(name)
