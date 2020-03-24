@@ -17,7 +17,7 @@ class MusicLibraryController
 
     input = gets.chomp
     while input != "exit"
-
+      input = gets.chomp
     end
   end
 end
