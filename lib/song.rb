@@ -57,7 +57,11 @@ class Song
   def self.new_from_filename(file)
     arr = file.split(' - ')
     song = self.new(arr[0])
-    song.artist.name = arr[1]
+    song.artist_name = arr[1]
     song
+  end
+  def artist_name=(name)
+    self.artist = Artist.find_or_create_by_name(name)
+    artist.add_song(self)
   end
 end
