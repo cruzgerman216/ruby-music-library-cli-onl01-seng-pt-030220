@@ -29,6 +29,7 @@ class Song
     @genre = genre
     if !@genre.songs.include?(self)
       @genre.songs << self
+    end
   end
   def self.create(name)
     song = Song.new(name)
