@@ -26,7 +26,9 @@ class Artist
     artist
   end
 
-
+  def genres 
+    Songs.all.collect {|song| song.artist == self return song.genre}
+  end 
   def add_song(song)
     if song.artist == nil
       song.artist = self
