@@ -27,8 +27,14 @@ class Artist
 
   def genres
     arr = []
-    Songs.all.collect {|song| song.artist == self return song.genre}
+    songs.each do |song| 
+      if !arr.include?(song.genre)
+        arr << song
+      end
+    end
+    arr
   end
+  
   def add_song(song)
     if song.artist == nil
       song.artist = self
