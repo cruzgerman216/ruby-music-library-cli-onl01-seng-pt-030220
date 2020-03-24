@@ -6,7 +6,7 @@ class Song
     @name = name
       self.artist = artist if artist != nil
       self.genre = genre if genre != nil
-      self.artist.genre << genre
+      self.artist.genres << genre
     save
   end
 
