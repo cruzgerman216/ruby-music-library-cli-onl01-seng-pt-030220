@@ -7,7 +7,7 @@ class Song
       self.artist = artist if artist != nil
       self.genre = genre if genre != nil
       self.artist.genres << genre if artist != nil && genre != nil && !self.artist.genres.include?(genre)
-      self.genre.artists << artist if artist != nil && genre != nil 
+      self.genre.artists << artist if artist != nil && genre != nil
 
     save
   end
