@@ -22,7 +22,7 @@ class MusicLibraryController
     end
   end
 
-  def list_songs 
+  def list_songs
     Song.all.sort {|a,b| a.name <=> b.name}
 
      do |song|
