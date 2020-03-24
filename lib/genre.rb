@@ -20,7 +20,17 @@ class Genre
   def self.destroy_all
     @@all = []
   end
-
+  def artists
+     @new_array = []
+     @songs.each do |song|
+       if @new_array.include?(song.artist)
+         nil
+       else
+         @new_array << song.artist
+       end
+     end
+     @new_array
+   end
   def self.create(name)
     genre = Genre.new(name)
     @@all << genre
