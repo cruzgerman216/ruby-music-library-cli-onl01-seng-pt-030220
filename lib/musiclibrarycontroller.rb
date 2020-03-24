@@ -1,6 +1,6 @@
 class MusicLibraryController
 
-  def initialize(file)
-
+  def initialize(path)
+    mi = MusicImporter.new(path)
   end
 end
