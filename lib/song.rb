@@ -40,13 +40,17 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.detect do |song|
-        song.name == name
-      end
+    song_instance = nil
+    Song.all.each do |song|
+      song_instance = song if song.name == name
+    end
+    song_instance
   end
 
   def self.find_or_create_by_name(name)
-    self.find_by_name(name) || self.create(name)
+    if !Song.find_by_name(name)
+      song = Song.new(name)
+    end
   end
 
 end
