@@ -24,7 +24,7 @@ class Genre
   def artists
     arr = []
     songs.each do |song|
-      arr << song.artist
+      arr << song.artist if !arr.include?(song.artist)
     end
     arr
   end
