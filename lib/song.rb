@@ -55,6 +55,6 @@ class Song
   end
 
   def self.new_from_filename(file)
-    self.find_or_create_by_name(file)
+    Song.find_or_create_by_name(file)
   end
 end
