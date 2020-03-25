@@ -58,7 +58,11 @@ class MusicLibraryController
     #     puts "#{song.name}"
     #   end
     # end
-    puts "hey"
+    arr = []
+    Song.all.each do |song|
+      if song.name == input
+        puts song.name
+    end
   end
 
 end
