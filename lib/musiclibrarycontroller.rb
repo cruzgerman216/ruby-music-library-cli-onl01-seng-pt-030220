@@ -18,7 +18,7 @@ class MusicLibraryController
 
     input = gets.chomp
     while input != "exit"
-      case input 
+      case input
 
       when "list artists"
         self.list_artists
