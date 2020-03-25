@@ -52,7 +52,11 @@ class MusicLibraryController
     input = gets.strip
     num = 0
     i = 0
-
+    while num < Artist.all.length
+     i = num  if Artist.all[num].name == input
+      
+      num++
+    end
    Artist.all[i].songs.sort{|a, b| a.name <=> b.name}.each_with_index do |s, i|
        puts "#{i+1}. #{s.name} - #{s.genre.name}"
      end
