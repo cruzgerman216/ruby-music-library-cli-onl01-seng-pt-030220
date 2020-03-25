@@ -75,9 +75,11 @@ class MusicLibraryController
 
     songs = Song.all.sort {|a,b| a.name <=> b.name}
     songs.each_with_index do |song, i|
+      i+1
       if i == input
         puts "test"
       end
     end
   end
+  
 end
