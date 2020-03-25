@@ -77,6 +77,7 @@ class MusicLibraryController
     songs.each_with_index do |song, i|
       if i = input
         puts "test"
+      end
     end
   end
 end
