@@ -32,5 +32,5 @@ class MusicLibraryController
   def list_artists
   puts Artist.all
   end
-  
+
 end
