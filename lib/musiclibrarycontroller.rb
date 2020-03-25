@@ -62,6 +62,7 @@ class MusicLibraryController
     Song.all.each do |song|
       if song.name == input
         puts song.name
+      end
     end
   end
 
