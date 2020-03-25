@@ -77,7 +77,7 @@ class MusicLibraryController
     songs.each_with_index do |song, i|
       i+1
       if i == input.to_i
-        puts "test"
+        puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
   end
