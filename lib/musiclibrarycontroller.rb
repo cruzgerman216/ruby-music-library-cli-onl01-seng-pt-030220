@@ -24,6 +24,8 @@ class MusicLibraryController
         self.list_artists
       when "list songs"
         self.list_songs
+      when "list genres"
+        self.list_genres
 
       end
       input = gets.chomp
