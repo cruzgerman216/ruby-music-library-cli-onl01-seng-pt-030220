@@ -64,6 +64,7 @@ class MusicLibraryController
         puts song.name
       end
     end
+    puts
   end
 
 end
