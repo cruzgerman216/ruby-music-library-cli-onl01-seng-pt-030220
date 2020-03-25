@@ -23,7 +23,7 @@ class MusicLibraryController
       when "list artists"
         self.list_artists
       when "list songs"
-        self.list_artists
+        self.list_songs
 
       end
       input = gets.chomp
