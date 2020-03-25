@@ -53,7 +53,7 @@ class MusicLibraryController
     num = 0
     i = 0
     while num < Artist.all.length
-  
+
       num++
     end
    Artist.all[i].songs.sort{|a, b| a.name <=> b.name}.each_with_index do |s, i|
