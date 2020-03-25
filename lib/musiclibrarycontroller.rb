@@ -52,12 +52,13 @@ class MusicLibraryController
 
     input = gets.chomp
 
-    songs = Song.all.sort {|a,b| a.name <=> b.name}
-    songs.each_with_index do |song, i|
-      if song.name == input
-        puts "#{song.name}"
-      end
-    end
+    # songs = Song.all.sort {|a,b| a.name <=> b.name}
+    # songs.each_with_index do |song, i|
+    #   if song.name == input
+    #     puts "#{song.name}"
+    #   end
+    # end
+    puts "hey"
   end
 
 end
