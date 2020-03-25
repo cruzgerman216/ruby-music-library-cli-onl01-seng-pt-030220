@@ -61,10 +61,10 @@ class MusicLibraryController
     arr = []
     Song.all.each do |song|
       if song.name == input
-        puts song.name
+        arr << song.name
       end
     end
-    puts
+    puts arr[0]
   end
 
 end
