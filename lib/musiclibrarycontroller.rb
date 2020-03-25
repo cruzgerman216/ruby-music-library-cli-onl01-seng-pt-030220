@@ -58,13 +58,10 @@ class MusicLibraryController
     #     puts "#{song.name}"
     #   end
     # end
-    arr = []
-    Song.all.each do |song|
-      if song.name == input
-        arr << song.name
-      end
-    end
-    puts arr[0]
-  end
+    if artist = Artist.find_by_name(input)
+          artist.songs.sort{|a, b| a.name <=> b.name}.each_with_index do |s, i|
+            puts "#{i+1}. #{s.name} - #{s.genre.name}"
+          end
+        end
 
 end
