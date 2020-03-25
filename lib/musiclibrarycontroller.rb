@@ -52,7 +52,7 @@ class MusicLibraryController
     input = gets.strip
     art = []
 
-   Artist.all[input].songs.sort{|a, b| a.name <=> b.name}.each_with_index do |s, i|
+   Artist.all[1].songs.sort{|a, b| a.name <=> b.name}.each_with_index do |s, i|
        puts "#{i+1}. #{s.name} - #{s.genre.name}"
      end
   end
