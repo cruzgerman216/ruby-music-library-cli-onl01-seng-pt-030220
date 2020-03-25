@@ -19,7 +19,7 @@ class Artist
 
   def save
 
-    @@all << self unless !@@all.include?(self)
+    @@all << self unless @@all.include?(self)
   end
 
   def self.create(name)
